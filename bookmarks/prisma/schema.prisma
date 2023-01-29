@@ -1,5 +1,3 @@
-// This is your Prisma schema file,
-// learn more about it in the docs: https://pris.ly/d/prisma-schema
 
 generator client {
   provider = "prisma-client-js"
@@ -11,22 +9,31 @@ datasource db {
 }
 
 model User {
-  id Int @id @default(autoincrement())
+  id        Int @id @default(autoincrement())
   createdAt DateTime  @default(now())
   updatedAt DateTime  @default(now())
 
-  email String
-  hash  String
+  email     String @unique
+  hash      String
   firstname String?
   lastname  String?
+  
+  BookMark BookMark[]
+
+  @@map("users")
 }
 
 model BookMark {
-  id Int @id @default(autoincrement())
+  id        Int @id @default(autoincrement())
   createdAt DateTime  @default(now())
   updatedAt DateTime  @default(now())
 
-  title String
+  title       String
   desciption  String?
-  link  String
+  link        String
+
+  userId  Int
+  user  User  @relation(fields: [userId], references:[id])
+
+  @@map("bookmarks")
 }
