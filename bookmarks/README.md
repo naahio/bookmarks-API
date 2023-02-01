@@ -13,7 +13,7 @@
 <a href="https://circleci.com/gh/nestjs/nest" target="_blank"><img src="https://img.shields.io/circleci/build/github/nestjs/nest/master" alt="CircleCI" /></a>
 <a href="https://coveralls.io/github/nestjs/nest?branch=master" target="_blank"><img src="https://coveralls.io/repos/github/nestjs/nest/badge.svg?branch=master#9" alt="Coverage" /></a>
 <a href="https://discord.gg/naahio#3643" target="_blank"><img src="https://img.shields.io/badge/discord-online-brightgreen.svg" alt="Discord"/></a>
-<a href="https://opencollective.com/nest#backer" target="_blank"><img src="https://opencollective.com/nest/backers/badge.svg" alt="Backers on Open Collective" /></a>
+
 
 </p>
 
@@ -42,7 +42,8 @@ $ npm run start:prod
 
 ## Project
 
-```bookmarks API from scratch using:
-    |nestJs, docker, postgres, passport js, prisma, pactum and dotenv
+```
+  build a bookmarks API from scratch using:
+  nestJs, docker, postgres, passport js, prisma, pactum and dotenv
       
 ```
